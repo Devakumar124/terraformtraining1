@@ -5,13 +5,11 @@ variable "ami" {
 }
 
 variable "instance_count" {
-  default = "3"
+  default = "0"
 }
 
 variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "aws_region" {
-  default = "ap-south-1"
-}
+

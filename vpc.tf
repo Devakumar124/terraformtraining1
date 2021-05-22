@@ -5,7 +5,7 @@ resource "aws_vpc" "prod-vpc" {
     enable_classiclink = "false"
     instance_tenancy = "default"  
     
-    tags {
+    tags = {
         Name = "prod-vpc"
     }
 }
@@ -15,7 +15,7 @@ resource "aws_subnet" "prod-subnet-public-1" {
     cidr_block = "10.0.1.0/24"
     map_public_ip_on_launch = "true" //it makes this a public subnet
     availability_zone = "ap-south-1"
-    tags {
+    tags = {
         Name = "prod-subnet-public-1"
     }
 }

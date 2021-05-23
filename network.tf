@@ -40,7 +40,7 @@ resource "aws_security_group" "ssh-allowed" {
         // This means, all ip address are allowed to ssh ! 
         // Do not do it in the production. 
         // Put your office or home address in it!
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = [" 65.0.3.217/24"]
     }
     //If you do not add this rule, you can not reach the NGIX  
     ingress {

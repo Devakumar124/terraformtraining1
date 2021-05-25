@@ -5,6 +5,7 @@ pipeline{
             terraform 'terraform'
         }
         stages{
+<<<<<<< HEAD
          stage('cloning'){
                 steps{
                     git 'https://github.com/Devakumar124/terraformtraining1.git'
@@ -27,10 +28,8 @@ pipeline{
                 steps{
                     sh 'terraform apply --auto-approve'
                 }
-                
-             }
 
-             
+             }
          }
     }
 

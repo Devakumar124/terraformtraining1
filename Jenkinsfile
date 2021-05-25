@@ -4,8 +4,7 @@ pipeline{
         tools{
             terraform 'terraform'
         }
-        stages{
-<<<<<<< HEAD
+        stages {
          stage('cloning'){
                 steps{
                     git 'https://github.com/Devakumar124/terraformtraining1.git'

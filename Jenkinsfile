@@ -5,7 +5,7 @@ pipeline{
             terraform 'terraform'
         }
         stages{
-            stage('cloning'){
+         stage('cloning'){
                 steps{
                     git 'https://github.com/Devakumar124/terraformtraining1.git'
                     
@@ -29,15 +29,11 @@ pipeline{
                 }
                 
              }
-	      stage('terraform Destroy'){
-                steps{
-                    sh 'terraform destroy --auto-approve'
-                }
-
-             }
 
              
          }
     }
 
-    //jenik file
+    //jenik file 
+    //destroy style
+
